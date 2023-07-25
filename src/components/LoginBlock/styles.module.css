@@ -1,0 +1,79 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5% 0 20%;
+    box-sizing: border-box;
+}
+
+.title{
+    font-family: "Inter Bold";
+    color: #18181B;
+}
+
+.input{
+    color: #18181B;
+    width: 100%;
+    background-color: #18181B0D;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.eyeInput{
+    position: relative;
+}
+.eye{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.buttonsBody{
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedbackBtn{
+    display: block;
+    margin: 0 auto;
+    color: #0858F7;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn{
+    width: 100%;
+    color: white;
+    background-color: #304DAF;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:active{
+    background-color: #1638a4;
+}
+
+@media screen and (max-width: 767px){
+    .form{
+        width: 100%;
+        padding: 0 10%;
+    }
+    .title{
+        text-align: center;
+    }
+}
