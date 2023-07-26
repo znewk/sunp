@@ -1,0 +1,25 @@
+.sideBar{
+    height: 100vh;
+    width: 5%;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 80%;
+    height: auto;
+}
+
+.topItems{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
