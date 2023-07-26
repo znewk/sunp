@@ -9,17 +9,91 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
 }
-
+.logoBody{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .logo{
-    width: 80%;
+    width: 50%;
     height: auto;
 }
 
-.topItems{
+.topItems, .bottomItems{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.bottomItems{
+    margin: 0;
+}
+.items{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item *{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.itemBody:hover path{
+    fill: #304DAF;
+    stroke: #304DAF;
+}
+.itemOtherBody:hover path{
+    fill: #fff;
+}
+.itemBody:hover g{
+    opacity: 1;
+}
+.itemOther *{
+    stroke: #2E2E2E;
+}
+
+.itemBody{
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.itemLine{
+    height: 0;
+    width: 4px;
+    background-color: #304DAF;
+    border-radius: 5px;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    transition: 0.3s;
+}
+
+.itemBody:hover .itemLine{
+    height: 100%;
+}
+
+.itemBodyLink{
+    width: 100%;
+}
+
+.itemMessage{
+    position: absolute;
+    right: -100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
