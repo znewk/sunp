@@ -113,6 +113,9 @@
         white-space: nowrap;
         transition-timing-function: linear;
     }
+    .sideBar *{
+        overflow: hidden;
+    }
     .mobileMenu{
         display: block;
         position: fixed;

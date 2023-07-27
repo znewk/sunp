@@ -2,16 +2,24 @@ import styles from './styles.module.css'
 import Link from "next/link";
 import Image from "next/image";
 import {AnimatePresence, motion} from "framer-motion";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import classnames from "classnames";
+import {useResize} from "../../modules/use-resize";
 
 const SideBar = () =>{
+    const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
+
+    // const [windowWith, setWindowWidth] = useState(window.outerWidth)
 
     const [openSideBar, setOpenSideBar] = useState(false)
 
     const [showLeaves, setShowLeaves] = useState(false)
     const [showProfile, setShowProfile] = useState(false)
     const [showSignOut, setShowSignOut] = useState(false)
+
+    useEffect(()=>{
+        // setWindowWidth(window.outerWidth)
+    }, [])
 
     return (
         <>
@@ -22,7 +30,7 @@ const SideBar = () =>{
             </motion.div>
 
 
-            <motion.div layout style={{width: openSideBar ? "50%" : 0}} className={styles.sideBar} >
+            <motion.div layout  style={{width: isScreenSm ? '5%' : openSideBar ? "50%" : 0}} className={styles.sideBar} >
                 <div className={styles.topItems}>
                     <Link href={'/'} className={styles.logoBody}>
                         <Image src={'/favicon.png'} alt={'logo'} width={54} height={52} className={styles.logo}/>
