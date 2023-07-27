@@ -94,7 +94,7 @@
 
 .itemMessage{
     position: absolute;
-    right: -100%;
+    right: -100px;
     background-color: rgba(0,0,0,0.5);
     color: white;
     padding: 10px;

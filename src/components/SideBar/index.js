@@ -38,7 +38,7 @@ const SideBar = () =>{
 
                     <nav className={styles.items}>
                         <Link href={'/cabinet'} className={styles.itemBodyLink} >
-                            <div className={styles.itemBody} onMouseEnter={()=>{setShowLeaves(true)}} onMouseLeave={()=> setShowLeaves(false)}>
+                            <div onClick={()=>setOpenSideBar(!openSideBar)} className={styles.itemBody} onMouseEnter={()=>{setShowLeaves(true)}} onMouseLeave={()=> setShowLeaves(false)} >
                                 <div className={styles.itemLine}></div>
 
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.item}>
@@ -75,7 +75,7 @@ const SideBar = () =>{
 
                 <div className={styles.bottomItems}>
                     <Link href={'/cabinet/profile'} className={styles.itemBodyLink} >
-                        <div className={styles.itemBody} onMouseEnter={()=>{setShowProfile(true)}} onMouseLeave={()=> setShowProfile(false)}>
+                        <div onClick={()=>setOpenSideBar(!openSideBar)} className={styles.itemBody} onMouseEnter={()=>{setShowProfile(true)}} onMouseLeave={()=> setShowProfile(false)}>
 
                             <div className={styles.itemLine}></div>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.item}>
@@ -98,7 +98,7 @@ const SideBar = () =>{
                     </Link>
 
                     <Link href={'/cabinet/profile'} className={styles.itemBodyLink} >
-                        <div className={classnames(styles.itemBody, styles.itemOtherBody)} onMouseEnter={()=>{setShowSignOut(true)}}  onMouseLeave={()=> setShowSignOut(false)}>
+                        <div onClick={()=>setOpenSideBar(!openSideBar)} className={classnames(styles.itemBody, styles.itemOtherBody)} onMouseEnter={()=>{setShowSignOut(true)}}  onMouseLeave={()=> setShowSignOut(false)}>
                             <div className={styles.itemLine}></div>
 
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.itemOther}>
