@@ -109,6 +109,7 @@
 @media screen and (max-width: 767px) {
     .sideBar{
         width: 0;
+        height: 100%;
         overflow: hidden;
         white-space: nowrap;
         transition-timing-function: linear;

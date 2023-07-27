@@ -6,10 +6,8 @@ import {useEffect, useState} from "react";
 import classnames from "classnames";
 import {useResize} from "../../modules/use-resize";
 
-const SideBar = () =>{
+const SideBar = ({role, ...props}) =>{
     const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
-
-    // const [windowWith, setWindowWidth] = useState(window.outerWidth)
 
     const [openSideBar, setOpenSideBar] = useState(false)
 
@@ -18,7 +16,7 @@ const SideBar = () =>{
     const [showSignOut, setShowSignOut] = useState(false)
 
     useEffect(()=>{
-        // setWindowWidth(window.outerWidth)
+
     }, [])
 
     return (

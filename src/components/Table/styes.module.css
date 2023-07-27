@@ -1,0 +1,49 @@
+.container{
+    padding: 0;
+    overflow: hidden;
+}
+.title{
+    margin: 0;
+    font-family: "Inter Bold";
+}
+
+.table{
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #6D7D9326;
+    padding-bottom: 5px;
+}
+
+.columnTitle{
+    padding: 15px;
+    color: #304DAF;
+}
+
+.hr{
+    width: 95%;
+    height: 1px;
+    background-color: #6D7D9326;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.td{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.changeBtn{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .table{
+        box-sizing: content-box;
+        width: auto;
+        overflow: hidden;
+    }
+    .table tbody {
+        overflow-x: auto;
+    }
+}

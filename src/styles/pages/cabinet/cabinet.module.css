@@ -1,0 +1,17 @@
+.contentBox{
+    padding-left: 7%;
+    padding-right: 5%;
+}
+.loading{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .contentBox{
+        padding: 0 5%;
+    }
+}
